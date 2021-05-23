@@ -30,7 +30,7 @@ const Reviews: React.FC = () => {
           image: images.results[index].picture.large,
           name: `${faker.name.firstName()} ${faker.name.lastName()}`,
           jobTitle: faker.name.jobTitle(),
-          review: faker.lorem.text(),
+          review: faker.lorem.paragraph()
         });
       }
       setAllEmployeeDetails(mockedEmployeeDetails);
@@ -63,12 +63,13 @@ const Reviews: React.FC = () => {
     }
   }
 
-  return (
+  return currentEmployee.name ? (
     <section id='reviews-root'>
-      <div>Our Reviews</div>
+      <div id='our-review-text'>Our Reviews</div>
+      <div id='line-block'></div>
       <ReviewCard currentEmployee={currentEmployee} onButtonClick={onButtonClick}/>
     </section>
-  );
+  ) : null;
 }
 
 export default Reviews;

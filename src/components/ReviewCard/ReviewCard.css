@@ -1,3 +1,96 @@
 #review-card-root {
-  border: 2px solid green;
+  border-radius: 12px;
+  box-shadow: 0 8px 12px 0 rgb(0 0 0 / 40%);
+  margin: auto;
+  max-width: 45%;
+  border: 5px #1AA4EB solid;
+  background-color: #FFF;
+  padding: 30px;
+  min-height: 60%;
+}
+
+#image-avatar {
+  margin: 22px auto;
+  width: 160px;
+  height: 160px;
+  box-sizing: border-box;
+  border: 5px #1AA4EB solid;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0px rgb(0 0 0 / 60%);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+#employee-image {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0px 8px 0 rgb(0 0 0 / 34%);
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+#employee-review{
+  min-height: 180px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  color: #5B7B98;
+}
+
+#employee-name {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 22px 0 8px 0;
+}
+
+#employee-job-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #1AA4EB;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.arrow-buttons {
+  cursor: pointer;
+  font-size: 40px;
+  color: #1AA4EB;
+  outline: none;
+}
+
+#left-arrow {
+  margin-right: 5px;
+}
+
+#right-arrow {
+  margin-left: 5px;
+}
+
+#surprise-button {
+  cursor: pointer;
+  outline: none;
+  margin-top: 10px;
+  padding: 6px;
+  border-radius: 10px;
+  font-weight: 500;
+  border: 2px solid #1AA4EB;
+  background-color: #ECF7FF;
+  color: #1AA4EB;
+  font-size: 18px;
+  text-transform: capitalize;
 }

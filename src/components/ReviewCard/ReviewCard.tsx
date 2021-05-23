@@ -19,11 +19,17 @@ const ReviewCard: React.FC<IReviewCardProps> = (props) => {
 
   return (
     <section id='review-card-root'>
-      <div>Review Card</div>
-      <div>{currentEmployee.name}</div>
-      <button onClick={() => props.onButtonClick('LEFT')}>LEFT</button>
-      <button onClick={() => props.onButtonClick('RIGHT')}>RIGHT</button>
-      <button onClick={() => props.onButtonClick('SURPRISE')}>SURPRISE</button>
+      <div id='image-avatar'>
+        <img id='employee-image'src={currentEmployee.image} alt='employee'></img>
+      </div>
+      <div id='employee-name'>{currentEmployee.name}</div>
+      <div id='employee-job-title'>{currentEmployee.jobTitle}</div>
+      <div id='employee-review'>{currentEmployee.review}</div>
+      <div>
+        <span id='left-arrow' onClick={() => props.onButtonClick('LEFT')} className="material-icons arrow-buttons">keyboard_arrow_left</span>
+        <span id='right-arrow' onClick={() => props.onButtonClick('RIGHT')} className="material-icons arrow-buttons">keyboard_arrow_right</span>
+      </div>
+      <button id='surprise-button' onClick={() => props.onButtonClick('SURPRISE')}>Surprise Me</button>
     </section>
   );
 }
