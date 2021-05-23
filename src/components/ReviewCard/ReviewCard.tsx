@@ -20,7 +20,7 @@ const ReviewCard: React.FC<IReviewCardProps> = (props) => {
   return (
     <section id='review-card-root'>
       <div id='image-avatar'>
-        <img id='employee-image'src={currentEmployee.image} alt='employee'></img>
+        <img id='employee-image'src={currentEmployee.image} alt='employee' height={150} width={150}></img>
       </div>
       <div id='employee-name'>{currentEmployee.name}</div>
       <div id='employee-job-title'>{currentEmployee.jobTitle}</div>

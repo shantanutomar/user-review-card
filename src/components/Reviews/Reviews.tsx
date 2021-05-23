@@ -53,10 +53,8 @@ const Reviews: React.FC = () => {
     if(currentIndex <= 0 && requestType === 'LEFT') currentIndex = 50;
     if(currentIndex >= 49 && requestType === 'RIGHT') currentIndex = -1;
     if(requestType === 'LEFT') {
-      console.log('Going to->', currentIndex - 1);
       setCurrentEmployee({...allEmployeeDetails[currentIndex - 1]});
     } else if(requestType === 'RIGHT') {
-      console.log('Going to->', currentIndex + 1);
       setCurrentEmployee({...allEmployeeDetails[currentIndex + 1]});
     } else {
       setCurrentEmployee({...allEmployeeDetails[randomIntFromRange(0, 49)]});

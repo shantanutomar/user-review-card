@@ -11,8 +11,8 @@
 
 #image-avatar {
   margin: 22px auto;
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   box-sizing: border-box;
   border: 5px #1AA4EB solid;
   border-radius: 50%;
@@ -93,4 +93,31 @@
   color: #1AA4EB;
   font-size: 18px;
   text-transform: capitalize;
+}
+
+@media (max-width: 480px) {
+  #review-card-root {
+    margin: auto;
+    border-radius: 0;
+    max-width: 100%;
+    border: 5px #1AA4EB solid;
+    background-color: #FFF;
+    padding: 16px;
+    min-height: 84%;
+  }
+  #employee-name {
+    font-size: 28px;
+  }
+  #employee-job-title {
+    font-size: 16px;
+  }
+  #employee-review {
+    font-size: 16px;
+    min-height: 150px;
+  }
+  #surprise-button {
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
 }
